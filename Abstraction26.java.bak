@@ -1,0 +1,28 @@
+interface Vehicle
+{
+	void travel();
+} 
+class Train implements Vehicle
+{
+	public void travel()
+	{
+		System.out.println("train is a vehicle");
+}
+}
+class Bullet
+{
+	public static Vehicle ride(Vehicle v1)
+	{
+		Vehicle v1=new Train();
+		return v1;
+		
+}
+}
+class Abstraction26
+{
+	public static void main(String[] args) 
+	{
+		Vehicle rv=Bullet.ride();
+		rv.travel();
+	}
+}

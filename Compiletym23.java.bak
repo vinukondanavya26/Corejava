@@ -1,0 +1,19 @@
+class Multiplication 
+{
+	public static void mul(int a,int b)
+	{
+		System.out.println(a*b);
+	}
+	public static void mul(int d,int e,double c)
+	{
+		System.out.println(d*e*c);
+	}
+}
+class Compiletym23
+{
+	public static void main(String[] args) 
+	{
+		Multiplication.mul(2,3);
+		Multiplication.mul(2,3,5.0);
+	}
+}
